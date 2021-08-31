@@ -1,0 +1,3039 @@
+body {
+    background-color: rgb(76, 144, 161);
+    margin: 0px;
+    
+}
+
+header {
+    background-color:#000;
+    color: #FFF;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 60px;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    background-image:url(images/quimica2.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 80px;
+    height: 70px;
+    margin-right: 100px;
+
+}
+
+.titulo h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    color: rgb(76, 144, 161);
+}
+
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(18 , 40px) ;
+    grid-template-rows: repeat(7, 40px);
+    grid-gap: 5px 5px;
+
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.container-exemplo{
+    width: 800px;
+    height: 100px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.exemplo {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.num-atomico {
+    width: 100px;
+    padding-left: 10px;
+}
+.simb-quimico{
+    font-size: 30px;
+}
+.nome {
+    padding-bottom: 10px;
+}
+.exemplo-info {
+   
+    width: 140px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-left: 10px;
+}
+
+
+
+.hidrogenio,
+.carbono,
+.nitrogenio,
+.oxigenio,
+.fosforo,
+.enxofre,
+.selenio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: green;
+
+}
+/*.hidrogenio:active {
+    position: relative;
+    top:2px;
+}*/
+
+
+.hidrogenio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;  
+    grid-row-end: 2 ;
+}
+.hidrogenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+    
+}
+.hidrogenio:hover .hidrogenio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.hidrogenio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.hidrogenio-info-2 {
+    font-size: 30px;
+}
+.hidrogenio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.hidrogenio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/hidrogenio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.carbono {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 2;  
+    grid-row-end: 3 ;
+}
+.carbono-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.carbono:hover .carbono-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.carbono-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.carbono-info-2 {
+    font-size: 30px;
+}
+.carbono-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.carbono-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/carnbono.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.nitrogenio {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 2;  
+    grid-row-end: 3 ;
+}
+.nitrogenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.nitrogenio:hover .nitrogenio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.nitrogenio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.nitrogenio-info-2 {
+    font-size: 30px;
+}
+.nitrogenio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.nitrogenio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/nitrogenio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.oxigenio {
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row-start: 2;  
+    grid-row-end: 3 ;
+}
+.oxigenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.oxigenio:hover .oxigenio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.oxigenio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.oxigenio-info-2 {
+    font-size: 30px;
+}
+.oxigenio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.oxigenio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/oxigenio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.fosforo {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 3;  
+    grid-row-end: 4 ;
+}
+.fosforo-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.fosforo:hover .fosforo-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.fosforo-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.fosforo-info-2 {
+    font-size: 30px;
+}
+.fosforo-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.fosforo-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/fosforo.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.enxofre{
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row-start: 3;  
+    grid-row-end: 4 ;
+}
+.enxofre-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.enxofre:hover .enxofre-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.enxofre-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.enxofre-info-2 {
+    font-size: 30px;
+}
+.enxofre-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.enxofre-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/enxofre.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.selenio{
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row-start: 4;  
+    grid-row-end: 5 ;
+}
+.selenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.selenio:hover .selenio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.selenio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.selenio-info-2 {
+    font-size: 30px;
+}
+.selenio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.selenio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/selenio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+
+.helio,
+.neonio,
+.argonio,
+.criptonio,
+.xenonio,
+.radonio,
+.oganessonio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(12, 88, 107);
+    
+} 
+
+
+.helio {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 1;  
+    grid-row-end: 2 ;
+}
+.helio-info {
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.helio:hover .helio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.helio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.helio-info-2 {
+    font-size: 30px;
+}
+.helio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.helio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/helio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.neonio {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 2;  
+    grid-row-end: 3 ;
+}
+.neonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.neonio:hover .neonio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.neonio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.neonio-info-2 {
+    font-size: 30px;
+}
+.neonio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.neonio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/neonio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.argonio {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 3;  
+    grid-row-end: 4 ;
+}
+.argonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.argonio:hover .argonio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.argonio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.argonio-info-2 {
+    font-size: 30px;
+}
+.argonio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.argonio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/argonio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.criptonio {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 4;  
+    grid-row-end: 5 ;
+}
+.criptonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.criptonio:hover .criptonio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.criptonio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.criptonio-info-2 {
+    font-size: 30px;
+}
+.criptonio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.criptonio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/criptonio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.xenonio {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 5;  
+    grid-row-end: 6 ;
+}
+.xenonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.xenonio:hover .xenonio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.xenonio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.xenonio-info-2 {
+    font-size: 30px;
+}
+.xenonio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.argonio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/xenonio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.radonio {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 6;  
+    grid-row-end: 7;
+}
+.radonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.radonio:hover .radonio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.radonio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.radonio-info-2 {
+    font-size: 30px;
+}
+.radonio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.oganessonio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url();
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+
+
+.oganessonio {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 7;  
+    grid-row-end: 8;
+}
+.oganessonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.oganessonio:hover .oganessonio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.oganessonio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.oganessonio-info-2 {
+    font-size: 30px;
+}
+.oganessonio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.oganessonio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url();
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.litio,
+.sodio,
+.potassio,
+.rubidio,
+.cesio,
+.francio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: orange;
+    
+    
+}
+
+
+.litio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;  
+    grid-row-end: 3 ;
+}
+.litio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.litio:hover .litio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.litio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.litio-info-2 {
+    font-size: 30px;
+}
+.litio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.litio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/litio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.sodio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;  
+    grid-row-end: 4 ;
+}
+.sodio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.sodio:hover .sodio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.sodio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.sodio-info-2 {
+    font-size: 30px;
+}
+.sodio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.sodio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/sodio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.potassio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;  
+    grid-row-end: 5 ;
+}
+.potassio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.potassio:hover .potassio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.potassio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.potassio-info-2 {
+    font-size: 30px;
+}
+.potassio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.potassio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/potassio.JPG);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.rubidio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;  
+    grid-row-end: 6 ;
+}
+.rubidio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.rubidio:hover .rubidio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.rubidio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.rubidio-info-2 {
+    font-size: 30px;
+}
+.rubidio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.rubidio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/rubidio.jfif);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.cesio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;  
+    grid-row-end: 7 ;
+}
+.cesio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+.cesio:hover .cesio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.cesio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.cesio-info-2 {
+    font-size: 30px;
+}
+.cesio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.cesio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/cesio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.francio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;  
+    grid-row-end: 8 ;
+}
+.francio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 180px;
+    position:absolute;
+    display: none;
+}
+
+.francio:hover .francio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.francio-info-1 {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+.francio-info-2 {
+    font-size: 30px;
+}
+.francio-info-3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.francio-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image:url(images/francio.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.berilio,
+.magnesio,
+.calcio,
+.estroncio,
+.bario,
+.radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(255, 255, 0);
+    
+}
+
+.berilio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;  
+    grid-row-end: 3 ;
+}
+.berilio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.berilio:hover .berilio-info{
+    display: block;
+}
+
+.magnesio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;  
+    grid-row-end: 4 ;
+}
+.magnesio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.magnesio:hover .magnesio-info{
+    display: block;
+}
+
+.calcio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;  
+    grid-row-end: 5 ;
+}
+.calcio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.calcio:hover .calcio-info{
+    display: block;
+}
+
+.estroncio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;  
+    grid-row-end: 6 ;
+}
+.estroncio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.estroncio:hover .estroncio-info{
+    display: block;
+}
+
+.bario {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;  
+    grid-row-end: 7 ; 
+}
+.bario-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.bario:hover .bario-info{
+    display: block;
+}
+
+.radio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;  
+    grid-row-end: 8 ; 
+}
+.radio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.radio:hover .radio-info{
+    display: block;
+}
+
+.boro,
+.silicio,
+.germanio,
+.arsenio,
+.antimonio,
+.telurio,
+.polonio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(0, 128, 128);
+   
+    
+}
+
+.arsenio {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 4;  
+    grid-row-end: 5 ;
+}
+.arsenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.arsenio:hover .arsenio-info{
+    display: block;
+}
+
+.antimonio {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 5;  
+    grid-row-end: 6 ;
+}
+.antimonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.antimonio:hover .antimonio-info{
+    display: block;
+}
+
+.boro {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 2;  
+    grid-row-end: 3 ; 
+}
+.boro-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.boro:hover .boro-info{
+    display: block;
+}
+
+.silicio {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 3;  
+    grid-row-end: 4 ; 
+}
+.silicio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.silicio:hover .silicio-info{
+    display: block;
+}
+
+.germanio {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 4;  
+    grid-row-end: 5 ;  
+}
+.germanio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.germanio:hover .germanio-info{
+    display: block;
+}
+
+.telurio {
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row-start: 5;  
+    grid-row-end: 6 ;  
+}
+.telurio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.telurio:hover .telurio-info{
+    display: block;
+}
+
+.polonio {
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row-start: 6;  
+    grid-row-end: 7 ; 
+}
+.polonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.polonio:hover .polonio-info{
+    display: block;
+}
+
+
+.aluminio,
+.galio,
+.indio,
+.estanho,
+.talio,
+.chumbo,
+.bismuto,
+.nihonio,
+.flerovio,
+.moscovio,
+.livermorio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(55, 127, 145);
+    
+    
+}
+
+.bismuto {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 6;  
+    grid-row-end: 7 ;
+}
+.bismuto-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.bismuto:hover .bismuto-info{
+    display: block;
+}
+
+.moscovio {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 7;  
+    grid-row-end: 8;
+}
+.moscovio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.moscovio:hover .moscovio-info{
+    display: block;
+}
+
+.aluminio {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 3;  
+    grid-row-end: 4 ; 
+}
+.aluminio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.aluminio:hover .aluminio-info{
+    display: block;
+}
+
+.galio {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 4;  
+    grid-row-end: 5; 
+}
+.galio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.galio:hover .galio-info{
+    display: block;
+}
+
+.indio {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 5;  
+    grid-row-end: 6;
+}
+.indio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.indio:hover .indio-info{
+    display: block;
+}
+
+.estanho {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 5;  
+    grid-row-end: 6 ;  
+}  
+.estanho-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.estanho:hover .estanho-info{
+    display: block;
+}
+
+.talio {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 6;  
+    grid-row-end: 7;  
+}
+.talio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.talio:hover .talio-info{
+    display: block;
+}
+
+.chumbo {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 6;  
+    grid-row-end: 7 ;
+}
+.chumbo-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.chumbo:hover .chumbo-info{
+    display: block;
+}
+
+.nihonio {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 7;  
+    grid-row-end: 8;  
+}
+.nihonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.nihonio:hover .nihonio-info{
+    display: block;
+}
+
+.flerovio {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 7;  
+    grid-row-end: 8;
+}
+.flerovio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.flerovio:hover .flerovio-info{
+    display: block;
+}
+
+.livermorio {
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row-start: 7;  
+    grid-row-end: 8;
+}
+.livermorio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.livermorio:hover .livermorio-info{
+    display: block;
+}
+
+
+
+.fluor,
+.cloro,
+.bromo,
+.iodo,
+.astato,
+.tenessino {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color:  rgb(53, 174, 204);
+    
+    
+}
+
+.fluor:hover,
+.cloro:hover,
+.bromo:hover,
+.iodo:hover,
+.astato:hover,
+.tenessino:hover {
+    background-color:white;
+}
+
+.fluor {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.fluor-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.fluor:hover .fluor-info{
+    display: block;
+}
+
+.cloro {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row-start: 3;  
+    grid-row-end: 4;
+}
+.cloro-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.cloro:hover .cloro-info{
+    display: block;
+}
+
+.bromo {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row-start: 4;  
+    grid-row-end: 5;
+}
+.bromo-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.bromo:hover .bromo-info{
+    display: block;
+}
+.iodo {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row-start: 5;  
+    grid-row-end: 6;
+}
+.iodo-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.iodo:hover .iodo-info{
+    display: block;
+}
+
+.astato {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row-start: 6;  
+    grid-row-end: 7;
+}
+.astato-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.astato:hover .astato-info{
+    display: block;
+}
+
+.tenessino {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row-start: 7;  
+    grid-row-end: 8;
+}
+.tenessino-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.tenessino:hover .tenessino-info{
+    display: block;
+}
+
+.escandio,
+.titanio,
+.vanadio,
+.cromio,
+.manganes,
+.ferro,
+.cobalto,
+.niquel,
+.cobre,
+.zinco,
+.itrio,
+.zirconio,
+.niobio,
+.molibdenio,
+.tecnecio,
+.rutenio,
+.rodio,
+.paladio,
+.prata,
+.cadmio,
+.hafnio,
+.tantalo,
+.tungstenio,
+.renio,
+.osmio,
+.iridio,
+.platina,
+.ouro,
+.mercurio,
+.rutherfodio,
+.dubnio,
+.seaborgio,
+.bohrio,
+.hassio,
+.meitnerio,
+.darmstadtio,
+.roentgenio,
+.copernicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(255, 99, 71);
+    
+   
+}
+
+.escandio {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;  
+    grid-row-end: 5 ; 
+}
+.escandio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.escandio:hover .escandio-info{
+    display: block;
+}
+
+.itrio {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;  
+    grid-row-end: 6 ; 
+}
+.itrio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.itrio:hover .itrio-info{
+    display: block;
+}
+
+.titanio {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;  
+    grid-row-end: 5 ; 
+}
+.titanio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.titanio:hover .titanio-info{
+    display: block;
+}
+
+.zirconio {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;  
+    grid-row-end: 6 ; 
+}
+.zirconio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.zirconio:hover .zirconio-info{
+    display: block;
+}
+
+.hafnio {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;  
+    grid-row-end: 7 ; 
+}
+.hafnio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.hafnio:hover .hafnio-info{
+    display: block;
+}
+
+.rutherfodio {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 7;  
+    grid-row-end: 8 ; 
+}
+.rutherfodio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.rutherfodio:hover .rutherfodio-info{
+    display: block;
+}
+
+.vanadio {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;  
+    grid-row-end: 5 ; 
+}
+.vanadio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.vanadio:hover .vanadio-info{
+    display: block;
+}
+
+.niobio {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;  
+    grid-row-end: 6 ; 
+}
+.niobio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.niobio:hover .niobio-info{
+    display: block;
+}
+
+.tantalo {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 6;  
+    grid-row-end: 7 ; 
+}
+.tantalo-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.tantalo:hover .tantalo-info{
+    display: block;
+}
+
+.dubnio {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 7;  
+    grid-row-end: 8 ; 
+}
+.dubnio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.dubnio:hover .dubnio-info{
+    display: block;
+}
+
+.cromio {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;  
+    grid-row-end: 5 ;
+}
+.cromio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.cromio:hover .cromio-info{
+    display: block;
+}
+
+.molibdenio {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 5;  
+    grid-row-end: 6 ;
+}
+.molibdenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.molibdenio:hover .molibdenio-info{
+    display: block;
+}
+
+.tungstenio {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 6;  
+    grid-row-end: 7 ; 
+}
+.tungstenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.tungstenio:hover .tungstenio-info{
+    display: block;
+}
+
+.seaborgio {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 7;  
+    grid-row-end: 8 ; 
+}
+.seaborgio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.seaborgio:hover .seaborgio-info{
+    display: block;
+}
+
+.manganes {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;  
+    grid-row-end: 5 ; 
+}
+.manganes-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.manganes:hover .manganes-info{
+    display: block;
+}
+
+.tecnecio {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 5;  
+    grid-row-end: 6 ; 
+}
+.tecnecio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.tecnecio:hover .tecnecio-info{
+    display: block;
+}
+
+.renio {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 6;  
+    grid-row-end: 7; 
+}
+.renio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.renio:hover .renio-info{
+    display: block;
+}
+
+.bohrio {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 7;  
+    grid-row-end: 8;
+}
+.bohrio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.bohrio:hover .bohrio-info{
+    display: block;
+}
+
+.ferro {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 4;  
+    grid-row-end: 5;  
+}
+.ferro-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.ferro:hover .ferro-info{
+    display: block;
+}
+
+.rutenio {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 5;  
+    grid-row-end: 6;  
+} 
+.rutenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.rutenio:hover .rutenio-info{
+    display: block;
+}
+
+.osmio {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 6;  
+    grid-row-end: 7; 
+}
+.osmio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.osmio:hover .osmio-info{
+    display: block;
+}
+
+.hassio {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 7;  
+    grid-row-end: 8; 
+}
+.hassio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.hassio:hover .hassio-info{
+    display: block;
+}
+
+.cobalto {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 4;  
+    grid-row-end: 5; 
+}
+.cobalto-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.cobalto:hover .cobalto-info{
+    display: block;
+}
+
+.rodio {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 5;  
+    grid-row-end: 6; 
+}
+.rodio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.rodio:hover .rodio-info{
+    display: block;
+}
+
+.iridio {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 6;  
+    grid-row-end: 7;
+}
+.iridio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.iridio:hover .iridio-info{
+    display: block;
+}
+
+.meitnerio {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 7;  
+    grid-row-end: 8;
+}
+.meitnerio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.meitnerio:hover .meitnerio-info{
+    display: block;
+}
+
+.niquel {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 4;  
+    grid-row-end: 5;
+}
+.niquel-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.niquel:hover .niquel-info{
+    display: block;
+}
+
+.paladio {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 5;  
+    grid-row-end: 6;
+}
+.paladio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.paladio:hover .paladio-info{
+    display: block;
+}
+
+.platina {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 6;  
+    grid-row-end: 7;
+}
+.platina-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.platina:hover .platina-info{
+    display: block;
+}
+
+.darmstadtio {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 7;  
+    grid-row-end: 8; 
+}
+.darmstadtio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.darmstadtio:hover .darmstadtio-info{
+    display: block;
+}
+
+.cobre {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 4;  
+    grid-row-end: 5; 
+}
+.cobre-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.cobre:hover .cobre-info{
+    display: block;
+}
+
+.prata {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 5;  
+    grid-row-end: 6; 
+}
+.prata-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.prata:hover .prata-info{
+    display: block;
+}
+
+.ouro {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 6;  
+    grid-row-end: 7; 
+}
+.ouro-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.ouro:hover .ouro-info{
+    display: block;
+}
+
+.roentgenio {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 7;  
+    grid-row-end: 8; 
+}
+.roentgenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.roentgenio:hover .roentgenio-info{
+    display: block;
+}
+
+.zinco {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 4;  
+    grid-row-end: 5;  
+}
+.zinco-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.zinco:hover .zinco-info{
+    display: block;
+}
+
+.cadmio {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 5;  
+    grid-row-end: 6;  
+}
+.cadmio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.cadmio:hover .cadmio-info{
+    display: block;
+}
+
+.mercurio {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 6;  
+    grid-row-end: 7;  
+}
+.mercurio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.mercurio:hover .mercurio-info{
+    display: block;
+}
+
+.copernicio {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 7;  
+    grid-row-end: 8;  
+}
+.copernicio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.copernicio:hover .copernicio-info{
+    display: block;
+}
+
+.section1 {
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    width: 670px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-columns: repeat(15 , 40px) ;
+    grid-template-rows: repeat(2 , 40px);
+    grid-gap: 5px 5px;
+
+}
+
+.lantanio,
+.cerio,
+.praseodimio,
+.neodimio,
+.promecio,
+.samario,
+.europio,
+.gadolinio,
+.terbio,
+.disprosio,
+.holmio,
+.erbio,
+.tulio,
+.iterbio,
+.lutecio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(12, 122, 98);
+
+    
+}
+
+.lutecio {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 1;  
+    grid-row-end: 2; 
+}
+.lutecio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.lutecio:hover .lutecio-info{
+    display: block;
+}
+
+.iterbio {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 1;  
+    grid-row-end: 2;  
+}
+.iterbio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.iterbio:hover .iterbio-info{
+    display: block;
+}
+
+.tulio {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 1;  
+    grid-row-end: 2;  
+}
+.tulio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.tulio:hover .tulio-info{
+    display: block;
+}
+
+.erbio {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 1;  
+    grid-row-end: 2;  
+}
+.erbio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.erbio:hover .erbio-info{
+    display: block;
+}
+
+.holmio {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 1;  
+    grid-row-end: 2;  
+}
+.holmio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.holmio:hover .holmio-info{
+    display: block;
+}
+
+.disprosio {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+}
+.disprosio-info {
+    background-color: rgba(0, 0, 0, 0.8)d;
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.disprosio:hover .disprosio-info{
+    display: block;
+}
+
+.terbio {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+}
+.terbio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.terbio:hover .terbio-info{
+    display: block;
+}
+
+.gadolinio {
+    grid-column-start:8;
+    grid-column-end: 9;
+    grid-row-start: 1;  
+    grid-row-end: 2;  
+}
+.gadolinio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.gadolinio:hover .gadolinio-info{
+    display: block;
+}
+
+.europio {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;  
+    grid-row-end: 2; 
+}
+.europio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.europio:hover .europio-info{
+    display: block;
+}
+
+.samario {
+    grid-column-start:6;
+    grid-column-end: 7;
+    grid-row-start:1;  
+    grid-row-end: 2; 
+}
+.samario-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.samario:hover .samario-info{
+    display: block;
+}
+
+.promecio {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+}
+.promecio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.promecio:hover .promecio-info{
+    display: block;
+}
+
+.neodimio {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+}
+.neodimio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.neodimio:hover .neodimio-info{
+    display: block;
+}
+
+.praseodimio {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+}
+.praseodimio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.praseodimio:hover .praseodimio-info{
+    display: block;
+}
+
+.cerio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+}
+.cerio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.cerio:hover .cerio-info{
+    display: block;
+}
+
+.lantanio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;  
+    grid-row-end: 2;
+}
+.lantanio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.lantanio:hover .lantanio-info{
+    display: block;
+}
+
+.actinio,
+.torio,
+.protactinio,
+.uranio,
+.netunio,
+.plutonio,
+.americio,
+.curio,
+.berquelio,
+.californio,
+.einstenio,
+.fermio,
+.mendelevio,
+.nobelio,
+.laurencio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(255, 105, 180);
+    
+    
+ 
+}
+
+
+.laurencio {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.laurencio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.laurencio:hover .laurencio-info{
+    display: block;
+}
+
+.nobelio {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.nobelio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.nobelio:hover .nobelio-info{
+    display: block;
+}
+
+.mendelevio {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.mendelevio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.mendelevio:hover .mendelevio-info{
+    display: block;
+}
+
+.fermio {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.fermio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.fermio:hover .fermio-info{
+    display: block;
+}
+
+.einstenio {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.einstenio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.einstenio:hover .einstenio-info{
+    display: block;
+}
+
+.californio {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.californio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.californio:hover .californio-info{
+    display: block;
+}
+
+.berquelio {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 2;  
+    grid-row-end: 3;
+}
+.berquelio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.berquelio:hover .berquelio-info{
+    display: block;
+}
+
+.curio {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;  
+    grid-row-end: 3;
+}
+.curio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.curio:hover .curio-info{
+    display: block;
+}
+
+.americio {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;  
+    grid-row-end: 3;
+}
+.americio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.americio:hover .americio-info{
+    display: block;
+}
+
+.plutonio {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;  
+    grid-row-end: 3;
+}
+.plutonio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.plutonio:hover .plutonio-info{
+    display: block;
+}
+
+.netunio {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.netunio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.netunio:hover .netunio-info{
+    display: block;
+}
+
+.uranio {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;  
+    grid-row-end: 3; 
+}
+.uranio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.uranio:hover .uranio-info{
+    display: block;
+}
+
+.protactinio {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;  
+    grid-row-end: 3;
+}
+.protactinio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.protactinio:hover .protactinio-info{
+    display: block;
+}
+
+.torio {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;  
+    grid-row-end: 3;
+}
+.torio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.torio:hover .torio-info{
+    display: block;
+}
+
+.actinio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;  
+    grid-row-end: 3;
+}
+.actinio-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: none;
+}
+.actinio:hover .actinio-info{
+    display: block;
+}
+
+.descricao {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+.descricao1 {
+    width: 600px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    
+}
+
+
+.nao-metais {
+    background-color: rgb(0, 128, 0);
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+
+
+.metais-alcalinos {
+    background-color: rgb(255, 165, 0);
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+
+
+.semimetais {
+    background-color: rgb(0, 128, 128);
+    margin-right: 10px;
+    padding: 5px;
+
+}
+
+.outros-metais {
+    background-color: rgb(55, 127, 145);
+    margin-right: 10px;
+    padding: 5px;
+
+}
+
+.lantanideos {
+    background-color: rgb(12, 122, 98);
+    padding: 5px;
+    
+}
+
+
+
+.descricao2 {
+    width: 600px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+.gases-nobres {
+    background-color: rgb(12, 88, 107);
+    margin-right: 10px;
+    padding: 5px;
+
+}
+
+
+.metais-alcalino-terrosos {
+    height: 20px;
+    background-color: rgb(255, 255, 0);
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+
+
+.halogenios {
+    background-color: rgb(53, 174, 204);
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+
+.metais-transicao {
+    background-color: rgb(255, 99, 71);
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+
+.teste {
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    display: none;
+    position:absolute;
+
+}
+
+
+.acnideos {
+    background-color: rgb(255, 105, 180);
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+
+.acnideos:hover .teste {
+    display: block;
+}
+
+
+footer {
+    width: 100%;
+    height: 30px;
+    margin-top: 60px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background-color:#000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
